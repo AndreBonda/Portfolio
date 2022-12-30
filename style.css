@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #5b7784;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
+header {
+    background-color: #ECE8DD;
+    height: 25vh;
+    min-height: 200px;
+    max-height: 280px;
+    display: flex;
+    align-items: center;
+}
+
+.heading-content {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+}
+
+.heading-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+}
+
+.heading-content a {
+    color: #5b7784bd;
+    font-size: 4rem;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.job-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-title h1 {
+    font-size: 5rem;
+    color: #5b7784;
+    ;
+}
+
+.job-title h2 {
+    font-size: 2.2rem;
+    color: #5b7784bd;
+}
+
+/* MAIN */
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.info-box {
+    background-color: #ECE8DD;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.info-content {
+    border-left: 4px solid #5b7784;
+    border-radius: 3px;
+}
+
+.info-content h3 {
+    color: #676767;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.info-content p,
+.info-content ul {
+    color: #676767;
+    margin-bottom: 8px;
+    padding-left: 25px;
+}
+
+.info-content ul li {
+    margin-bottom: 8px;
+}
+
+.info-content strong {
+    color: #787878;
+}
+
+.info-content hr {
+    width: 30%;
+    margin: 20px 0px 20px auto;
+    border: 1px solid #787878;
+}
+
+/* PRIMARY SECTION */
+.primary .info-box {
+    width: 70%;
+}
+
+.primary .info-content h3 {
+    font-size: 3.5rem;
+}
+
+.primary .info-content p,
+.primary .info-content ul {
+    font-size: 2rem;
+}
+
+.skill-list {
+    padding-left: 20px;
+    font-size: 0.9em;
+}
+
+.work .period {
+    float: right;
+}
+
+/* SECONDARY SECTION */
+.secondary .info-content h3 {
+    font-size: 2.8rem;
+}
+
+.secondary .info-content p,
+.secondary .info-content ul {
+    font-size: 1.7rem;
+}
+
+.info-content .contact {
+    padding-left: 5px;
+}
+
+.languages .language-level {
+    float: right;
+}
+
+@media screen and (max-width: 1150px) {
+    .heading-content {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        height: 35vh;
+    }
+
+    .heading-content {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .heading-content img {
+        width: 120px;
+        height: 120px;
+        border-radius: 80px;
+    }
+
+    .job-title h1 {
+        font-size: 4rem;
+    }
+
+    .job-title h2 {
+        text-align: center;
+        font-size: 2.0rem;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .secondary .info-box {
+        width: 70%;
+    }
+
+    .education {
+        margin-top: 0px;
+    }
+
+    .info-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .primary .info-content p,
+    .primary .info-content ul,
+    .secondary .info-content p,
+    .secondary .info-content ul {
+        font-size: 1.9rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .job-title h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .job-title h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header {
+        height: 40vh;
+    }
+}
